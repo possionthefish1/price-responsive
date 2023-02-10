@@ -1,0 +1,109 @@
+html{
+    box-sizing: border-box;
+}
+ul,li {
+    list-style: none;
+    padding: 0;
+}
+body{
+    background-color: #60a9ff;
+    font: 400 1rem 'Open Sans';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+.pricing-img{
+    margin-bottom: 25px;
+    max-width: 100%;
+}
+.panel{
+    background-color: white;
+    width: 100%;
+    max-width: 960px;
+    border-radius: 10px;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.pricing-plan:not(:last-child){
+    border-bottom: 1px solid #e1f1ff;
+    /* padding: 15px 25px; */
+    
+}
+
+.pricing-header{
+    font-weight: 600;
+    color:#888;
+    letter-spacing: 1px;
+}
+.pricing-features{
+    margin: 50px 10px 25px;
+    color: #2889e4
+}
+
+.pricing-features-item{
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    padding: 15px 0;
+    border-top: 1px solid #e1f1ff;
+}
+
+.pricing-features-item:last-child{
+    border-bottom: 1px solid #e1f1ff;
+}
+
+.pricing-price{
+    color:#016ff9;
+    display: block;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.pricing-button{
+    border: 1px solid #9dd1ff;
+    border-radius:10px;
+    color: #348efe;
+    padding: 15px 35px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 25px 0;
+    transition: background-color 200ms ease-in-out; 
+}
+
+.pricing-button:hover,.pricing-button:focus{
+    background-color: #e1f1ff;
+}
+
+.pricing-button.is-featured{
+    background-color: #48aaff;
+    color: whitesmoke;
+    transition: background-color 200ms ease-in-out; 
+
+}
+
+.pricing-button.is-featured:hover,.pricing-button.is-featured:focus{
+    background-color: #269aff
+}
+
+@media only screen and (min-width: 880px){
+    .panel{
+        flex-flow:row;
+    }
+    .pricing-plan{
+        padding: 25px 50px;
+    }
+    .pricing-plan:not(:last-child){
+        border-bottom: 0;
+        border-right: 1px solid #e1f1ff;
+    }
+
+}
